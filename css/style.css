@@ -377,8 +377,13 @@ nav.scrolled {
   border: 1px solid var(--border);
   z-index: -1;
 }
- Uncomment to add a real photo:
-.about-image { background-image: url('../images/photographer.jpg'); background-size: cover; background-position: center; }
+ .about-image {
+    background-image: url('../images/photographer.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
 .about-image-inner { display: none; }
 
 .about-image-inner {
