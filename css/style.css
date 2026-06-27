@@ -437,6 +437,7 @@ nav.scrolled {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
   gap: 1.2rem;
 }
 
@@ -449,16 +450,14 @@ nav.scrolled {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 3 / 4;
 }
 
 .portfolio-item.pi-tall {
-  aspect-ratio: 3 / 5;
+  grid-row: span 2;
 }
 
 .portfolio-item.pi-wide {
   grid-column: span 2;
-  aspect-ratio: 16 / 9;
 }
 
 .portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
