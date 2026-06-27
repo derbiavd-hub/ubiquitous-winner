@@ -356,62 +356,64 @@ nav.scrolled {
 .about {
   padding: 7rem 0;
 }
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   align-items: center;
 }
+
 .about-image {
   aspect-ratio: 3/4;
-  background: var(--bg3);
+  background: url('../images/photographer.jpg') center/cover no-repeat;
   border: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
+
 .about-image::before {
   content: '';
   position: absolute;
-  top: 16px; left: 16px;
-  right: -16px; bottom: -16px;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
   border: 1px solid var(--border);
   z-index: -1;
 }
-Uncomment to add a real photo:
-.about-image { background-image: url('../images/photographer.jpg'); background-size: cover; background-position: center; }
-.about-image-inner { display: none; }
- .about-image {
-    background-image: url('../images/photographer.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-}
-.about-image-inner { display: none; }
 
 .about-image-inner {
-  width: 100%; height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
+  display: none;
 }
-.about-cam { color: var(--gold); opacity: 0.2; }
+
+.about-cam {
+  color: var(--gold);
+  opacity: 0.2;
+}
+
 .about-img-label {
   font-size: 0.62rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text3);
 }
-.about-text .section-header { text-align: left; }
-.about-text .section-line { margin-left: 0; }
+
+.about-text .section-header {
+  text-align: left;
+}
+
+.about-text .section-line {
+  margin-left: 0;
+}
+
 .about-text p {
   font-size: 0.87rem;
   color: var(--text2);
   line-height: 2.2;
   margin-bottom: 1.4rem;
 }
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -420,6 +422,7 @@ Uncomment to add a real photo:
   padding-top: 2.5rem;
   border-top: 1px solid var(--border);
 }
+
 .stat-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
@@ -427,6 +430,7 @@ Uncomment to add a real photo:
   color: var(--gold);
   line-height: 1;
 }
+
 .stat-label {
   font-size: 0.62rem;
   letter-spacing: 0.2em;
@@ -434,7 +438,6 @@ Uncomment to add a real photo:
   color: var(--text3);
   margin-top: 0.4rem;
 }
-
 /* =============================================
    PORTFOLIO
    ============================================= */
@@ -442,12 +445,14 @@ Uncomment to add a real photo:
   padding: 7rem 0;
   background: var(--bg2);
 }
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   gap: 1.2rem;
 }
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -455,20 +460,30 @@ Uncomment to add a real photo:
   border: 1px solid var(--border);
   aspect-ratio: 3/4;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .portfolio-item.pi-tall {
   grid-row: span 2;
   aspect-ratio: auto;
 }
+
 .portfolio-item.pi-wide {
   grid-column: span 2;
   aspect-ratio: 16/9;
 }
- Add real photos like this:
-.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); background-size: cover; background-position: center; }
+
+.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
+.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); }
+.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
+.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); }
+.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); }
 
 .pi-inner {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,12 +493,17 @@ Uncomment to add a real photo:
   opacity: 0.2;
   transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
 }
-.portfolio-item:hover .pi-inner { transform: scale(1.04); }
+
+.portfolio-item:hover .pi-inner {
+  transform: scale(1.04);
+}
+
 .pi-inner span {
   font-size: 0.62rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
+
 .pi-overlay {
   position: absolute;
   inset: 0;
@@ -494,13 +514,18 @@ Uncomment to add a real photo:
   align-items: flex-end;
   padding: 1.5rem;
 }
-.portfolio-item:hover .pi-overlay { opacity: 1; }
+
+.portfolio-item:hover .pi-overlay {
+  opacity: 1;
+}
+
 .pi-overlay span {
   font-size: 0.62rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold2);
 }
+
 .portfolio-note {
   margin-top: 2.5rem;
   text-align: center;
