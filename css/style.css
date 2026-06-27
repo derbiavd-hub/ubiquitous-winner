@@ -449,8 +449,8 @@ nav.scrolled {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
   gap: 1.2rem;
+  grid-auto-rows: 220px;
 }
 
 .portfolio-item {
@@ -458,7 +458,6 @@ nav.scrolled {
   overflow: hidden;
   background: var(--bg3);
   border: 1px solid var(--border);
-  aspect-ratio: 3/4;
   cursor: pointer;
   background-size: cover;
   background-position: center;
@@ -467,12 +466,10 @@ nav.scrolled {
 
 .portfolio-item.pi-tall {
   grid-row: span 2;
-  aspect-ratio: auto;
 }
 
 .portfolio-item.pi-wide {
   grid-column: span 2;
-  aspect-ratio: 16/9;
 }
 
 .portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
@@ -535,7 +532,6 @@ nav.scrolled {
   border: 1px dashed var(--border);
   padding: 1rem;
 }
-
 /* =============================================
    SERVICES
    ============================================= */
