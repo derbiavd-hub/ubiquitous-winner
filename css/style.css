@@ -449,8 +449,8 @@ nav.scrolled {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
   grid-auto-rows: 220px;
+  gap: 1.2rem;
 }
 
 .portfolio-item {
@@ -472,11 +472,25 @@ nav.scrolled {
   grid-column: span 2;
 }
 
-.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
-.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); }
-.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
-.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); }
-.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); }
+.portfolio-item:nth-child(1) {
+  background-image: url('../images/port-1.jpg');
+}
+
+.portfolio-item:nth-child(2) {
+  background-image: url('../images/port-2.jpg');
+}
+
+.portfolio-item:nth-child(3) {
+  background-image: url('../images/port-3.jpg');
+}
+
+.portfolio-item:nth-child(4) {
+  background-image: url('../images/port-4.jpg');
+}
+
+.portfolio-item:nth-child(5) {
+  background-image: url('../images/port-5.jpg');
+}
 
 .pi-inner {
   width: 100%;
