@@ -460,6 +460,12 @@ nav.scrolled {
   grid-column: span 2;
 }
 
+.portfolio-item.pi-city {
+  grid-column: 3;
+  grid-row: 2 / 4;
+  background-image: url('../images/port-6.jpg');
+}
+
 .portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
 .portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); }
 .portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
