@@ -433,35 +433,43 @@ nav.scrolled {
   padding: 7rem 0;
   background: var(--bg2);
 }
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
   gap: 1.2rem;
 }
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
   background: var(--bg3);
   border: 1px solid var(--border);
-  aspect-ratio: 3/4;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 3 / 4;
 }
+
 .portfolio-item.pi-tall {
-  grid-row: span 2;
-  aspect-ratio: auto;
+  aspect-ratio: 3 / 5;
 }
+
 .portfolio-item.pi-wide {
   grid-column: span 2;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
 }
-.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); background-size: cover; background-position: center; }
-.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); background-size: cover; background-position: center; }
-.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); background-size: cover; background-position: center; }
-.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); background-size: cover; background-position: center; }
-.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); background-size: cover; background-position: center; }
+
+.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
+.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); }
+.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
+.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); }
+.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); }
+
 .pi-inner {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -471,12 +479,17 @@ nav.scrolled {
   opacity: 0.2;
   transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
 }
-.portfolio-item:hover .pi-inner { transform: scale(1.04); }
+
+.portfolio-item:hover .pi-inner {
+  transform: scale(1.04);
+}
+
 .pi-inner span {
   font-size: 0.62rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
+
 .pi-overlay {
   position: absolute;
   inset: 0;
@@ -487,13 +500,18 @@ nav.scrolled {
   align-items: flex-end;
   padding: 1.5rem;
 }
-.portfolio-item:hover .pi-overlay { opacity: 1; }
+
+.portfolio-item:hover .pi-overlay {
+  opacity: 1;
+}
+
 .pi-overlay span {
   font-size: 0.62rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold2);
 }
+
 .portfolio-note {
   margin-top: 2.5rem;
   text-align: center;
@@ -503,7 +521,6 @@ nav.scrolled {
   border: 1px dashed var(--border);
   padding: 1rem;
 }
-
 /* =============================================
    SERVICES
    ============================================= */
