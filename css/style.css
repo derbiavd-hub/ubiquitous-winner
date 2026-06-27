@@ -377,10 +377,10 @@ nav.scrolled {
   border: 1px solid var(--border);
   z-index: -1;
 }
-/* Uncomment to add a real photo:
+Uncomment to add a real photo:
 .about-image { background-image: url('../images/photographer.jpg'); background-size: cover; background-position: center; }
 .about-image-inner { display: none; }
-*/
+
 .about-image-inner {
   width: 100%; height: 100%;
   display: flex;
@@ -456,9 +456,9 @@ nav.scrolled {
   grid-column: span 2;
   aspect-ratio: 16/9;
 }
-/* Add real photos like this:
+Add real photos like this:
 .portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); background-size: cover; background-position: center; }
-*/
+
 .pi-inner {
   width: 100%; height: 100%;
   display: flex;
