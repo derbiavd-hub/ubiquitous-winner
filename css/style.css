@@ -437,19 +437,19 @@ nav.scrolled {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 260px;
+  grid-auto-rows: 300px;
   gap: 1.3rem;
 }
 
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  background: var(--bg3);
+  background-color: #111;
   border: 1px solid var(--border);
   cursor: pointer;
   background-size: cover;
-  background-position: center top;
   background-repeat: no-repeat;
+  background-position: center top;
   transition: transform 0.35s ease;
 }
 
@@ -468,7 +468,6 @@ nav.scrolled {
 .portfolio-item.pi-city {
   grid-column: 3;
   grid-row: 2 / 4;
-  background-image: url('../images/port-6.jpg');
 }
 
 .portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
@@ -476,6 +475,7 @@ nav.scrolled {
 .portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
 .portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); }
 .portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); }
+.portfolio-item:nth-child(6) { background-image: url('../images/port-6.jpg'); }
 
 .pi-inner {
   width: 100%;
@@ -503,7 +503,7 @@ nav.scrolled {
 .pi-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.1) 55%, transparent 100%);
   opacity: 0;
   transition: opacity 0.4s ease;
   display: flex;
@@ -529,7 +529,9 @@ nav.scrolled {
   color: var(--text3);
   letter-spacing: 0.1em;
   border: 1px dashed var(--border);
-  padding: 1rem;
+  padding: 1rem 1.2rem;
+  position: relative;
+  z-index: 2;
 }
 /* =============================================
    SERVICES
