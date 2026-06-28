@@ -437,8 +437,8 @@ nav.scrolled {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 220px;
-  gap: 1.2rem;
+  grid-auto-rows: 260px;
+  gap: 1.3rem;
 }
 
 .portfolio-item {
@@ -448,8 +448,13 @@ nav.scrolled {
   border: 1px solid var(--border);
   cursor: pointer;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
+  transition: transform 0.35s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-3px);
 }
 
 .portfolio-item.pi-tall {
