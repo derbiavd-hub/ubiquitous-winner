@@ -470,12 +470,12 @@ nav.scrolled {
   grid-row: 2 / 4;
 }
 
-.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); }
-.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); }
-.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); }
-.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); }
-.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); }
-.portfolio-item:nth-child(6) { background-image: url('../images/port-6.jpg'); }
+.portfolio-item:nth-child(1) { background-image: url('../images/port-1.jpg'); background-position: center 30%; }
+.portfolio-item:nth-child(2) { background-image: url('../images/port-2.jpg'); background-position: center center; }
+.portfolio-item:nth-child(3) { background-image: url('../images/port-3.jpg'); background-position: center 40%; }
+.portfolio-item:nth-child(4) { background-image: url('../images/port-4.jpg'); background-position: center 35%; }
+.portfolio-item:nth-child(5) { background-image: url('../images/port-5.jpg'); background-position: center center; }
+.portfolio-item:nth-child(6) { background-image: url('../images/port-6.jpg'); background-position: center 38%; }
 
 .pi-inner {
   width: 100%;
@@ -569,6 +569,7 @@ nav.scrolled {
   line-height: 1;
   cursor: pointer;
 }
+
 /* =============================================
    SERVICES
    ============================================= */
